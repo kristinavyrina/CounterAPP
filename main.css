@@ -1,0 +1,64 @@
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  width: 100%;
+  background: #ffffff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(pool-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.counter {
+  margin: 0 auto;
+  width: 700px;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.counter__value {
+  text-align: center;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.counter__addButton,
+.counter__resetButton {
+  width: 500px;
+  height: 100px;
+  border-radius: 20px;
+  border: none;
+  background: #4191ff;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
+}
+
+.counter__addButton:hover,
+.counter__resetButton:hover {
+  opacity: 0.7;
+}
+
+.counter__resetButton {
+  background: #d45366;
+}
